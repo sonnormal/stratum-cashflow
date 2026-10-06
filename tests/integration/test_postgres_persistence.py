@@ -1,16 +1,18 @@
 from decimal import Decimal
-import pytest
-from sqlalchemy.orm import Session
+from typing import Any
+
 from fastapi.testclient import TestClient
+from sqlalchemy import Engine
+from sqlalchemy.orm import Session
 
 from cashflow.api.main import create_app
 from cashflow.db.models import Base
 from cashflow.db.repository import PostgresMovementRepository
-from cashflow.domain.models import AccountMovement, TransactionType
+from cashflow.domain.models import AccountMovement
 
 
 def test_postgres_table_creation_and_insert(
-    db_engine, db_session: Session, valid_movement_payload: dict
+    db_engine: Engine, db_session: Session, valid_movement_payload: dict[str, Any]
 ) -> None:
     Base.metadata.create_all(db_engine)
     repo = PostgresMovementRepository(session=db_session)
@@ -30,7 +32,7 @@ def test_postgres_table_creation_and_insert(
 
 
 def test_postgres_atomic_unique_constraint_idempotency(
-    db_engine, db_session: Session, valid_movement_payload: dict
+    db_engine: Engine, db_session: Session, valid_movement_payload: dict[str, Any]
 ) -> None:
     Base.metadata.create_all(db_engine)
     repo = PostgresMovementRepository(session=db_session)
@@ -49,7 +51,7 @@ def test_postgres_atomic_unique_constraint_idempotency(
 
 
 def test_api_post_movement_end_to_end_in_container(
-    db_engine, valid_movement_payload: dict
+    db_engine: Engine, valid_movement_payload: dict[str, Any]
 ) -> None:
     Base.metadata.create_all(db_engine)
     app = create_app(engine=db_engine)
