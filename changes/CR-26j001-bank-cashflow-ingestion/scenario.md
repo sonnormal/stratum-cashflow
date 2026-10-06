@@ -115,8 +115,9 @@
 
 ## ⚖️ 6. GATE-02 Verification Checklist
 
-- [ ] Technical scope respects repository boundary (Domain persistence only, no IMAP or Viber tokens).
-- [ ] Tier 1 tests run in-memory (< 10ms) with zero I/O.
-- [ ] Tier 2 tests execute against ephemeral Testcontainers PostgreSQL on OrbStack.
-- [ ] Test fixtures contain zero real credentials or PII.
-- [ ] Automated tests fail cleanly (`Red` state) awaiting code synthesis (`STEP-05`).
+- [x] Technical scope respects repository boundary (Domain persistence only, no IMAP or Viber tokens).
+- [x] Tier 1 tests run in-memory (< 10ms) with zero I/O (6 passed in 0.36s).
+- [x] Tier 2 tests execute against ephemeral Testcontainers PostgreSQL on OrbStack (3 passed in 3.22s).
+- [x] Test fixtures contain zero real credentials or PII.
+- [x] Automated tests verified in `Green` state with `ruff` and `mypy --strict` passing with 0 warnings.
+- [x] Verification Status: `GREEN_PASSED` (Ready for integration seam testing).
