@@ -1,0 +1,14 @@
+{
+  "event_id": "c1f7a0b5-7798-4c07-b2e8-971c66708b41",
+  "occurred_at": "2026-10-06T14:30:00Z",
+  "bank_code": "VIB",
+  "account_number_mask": "*4321",
+  "transaction_type": "DEBIT",
+  "amount": 75000,
+  "currency": "VND",
+  "remaining_balance": null,
+  "description": "Thanh toan Highlands Coffee",
+  "counterparty": "Highlands Coffee",
+  "category": "Food & Beverage",
+  "raw_source_ref": "RFC822-MSG-20261006-VIB-001"
+}
