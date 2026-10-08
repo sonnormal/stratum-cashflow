@@ -12,13 +12,13 @@
 | Field | Detail |
 | :--- | :--- |
 | **Change ID** | `CR-26j001` |
-| **Target Repository** | [`services/cashflow`](file:///Users/son/Projects/Stratum/services/cashflow) |
-| **Feature Fulfillments** | [FEAT-001: Bank Transaction Ingestion & Cashflow Alerting](file:///Users/son/Projects/Stratum/stratum-meta/features/vib-transaction-alert.md) |
-| **Associated Flow** | [FLOW-001: Inbound Email Transaction Ingestion & Alerting](file:///Users/son/Projects/Stratum/stratum-meta/flows/email-transaction-ingestion.md) |
-| **Bound Contracts** | [TransactionDetectedEvent (v1)](file:///Users/son/Projects/Stratum/stratum-meta/contracts/events/transaction_detected.v1.json) |
+| **Target Repository** | [`services/cashflow`](../../) |
+| **Feature Fulfillments** | [FEAT-001: Bank Transaction Ingestion & Cashflow Alerting](../../../../stratum-meta/features/vib-transaction-alert.md) |
+| **Associated Flow** | [FLOW-001: Inbound Email Transaction Ingestion & Alerting](../../../../stratum-meta/flows/email-transaction-ingestion.md) |
+| **Bound Contracts** | [TransactionDetectedEvent (v1)](../../../../stratum-meta/contracts/events/transaction_detected.v1.json) |
 | **Author** | AI Verification Architect |
 | **Status** | `PENDING_GATE_02_APPROVAL` |
-| **Master CR Record** | [CR-26j001 Evaluation Report](file:///Users/son/Projects/Stratum/stratum-meta/changes/CR-26j001-bank-cashflow-ingestion/evaluation.md) |
+| **Master CR Record** | [CR-26j001 Evaluation Report](../../../../stratum-meta/changes/CR-26j001-bank-cashflow-ingestion/evaluation.md) |
 
 ---
 
